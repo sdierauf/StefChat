@@ -1,4 +1,8 @@
 StefChat
 ========
 
-Basic snapchat-like app that uses Parse as a backend. I've deleted my api keys from the delegate. 
+Basic snapchat clone that uses Parse as a backend. Written to get more comfortable with Obj-C.
+
+
+
+I've deleted my api keys from the delegate. 
