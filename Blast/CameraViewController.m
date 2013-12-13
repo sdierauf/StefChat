@@ -27,8 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.currentUser = [PFUser currentUser];
-    self.friendsRelation = [self.currentUser objectForKey:@"friendsRelation"];
+    
     self.recipients = [[NSMutableArray alloc] init];
 
 
@@ -41,6 +40,9 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    self.friendsRelation = [self.currentUser objectForKey:@"friendsRelation"];
+
+    self.currentUser = [PFUser currentUser];
     
     NSLog(@"camera viewwillappear was called");
     
@@ -251,6 +253,9 @@
         fileData = [NSData dataWithContentsOfFile:self.videoFilePath];
         fileName = @"video.mov";
         fileType = @"video";
+        UIAlertView *videoNotSupport = [[UIAlertView alloc] initWithTitle:@"Oops" message:@"Video isn't supported yet!" delegate:self cancelButtonTitle:@"Fuck!" otherButtonTitles:nil];
+        [videoNotSupport show];
+        [self reset];
     }
     
     PFFile *file = [PFFile fileWithName:fileName data:fileData];
@@ -278,7 +283,6 @@
                     [alertView show];
                 }
             }];
-            
         }
     }];
     
@@ -295,5 +299,13 @@
     
     return resizedImage;
 }
+
+//todo limit number of characters in message string. 
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    NSUInteger newLength = [textField.text length] + [string length] - range.length;
+    return (newLength > 5) ? NO : YES;
+}
+
 
 @end

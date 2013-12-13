@@ -48,6 +48,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="pWj-wH-RPT">
+                        <barButtonItem key="leftBarButtonItem" title="Refresh" id="Ebm-qZ-oO8">
+                            <connections>
+                                <action selector="refresh:" destination="0IE-Ke-QwC" id="vCh-CO-NCf"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="ckr-dp-Ppv">
                             <connections>
                                 <action selector="logout:" destination="0IE-Ke-QwC" id="lb2-s8-Vcb"/>
@@ -64,7 +69,7 @@
             </objects>
             <point key="canvasLocation" x="1032" y="42"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Login View Controller - StefChat-->
         <scene sceneID="t2p-k1-M5C">
             <objects>
                 <viewController id="H6M-sj-d3M" customClass="LoginViewController" sceneMemberID="viewController">
@@ -101,14 +106,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't have an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="br4-Yr-xy9">
-                                <rect key="frame" x="32" y="358" width="183" height="21"/>
+                                <rect key="frame" x="26" y="251" width="183" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4h-lL-r4d">
-                                <rect key="frame" x="223" y="354" width="66" height="30"/>
+                                <rect key="frame" x="217" y="247" width="66" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Sign up!">
@@ -128,7 +133,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="sIs-sX-VaC"/>
+                    <navigationItem key="navigationItem" title="StefChat" id="sIs-sX-VaC"/>
                     <connections>
                         <outlet property="passwordField" destination="cpK-ZP-F82" id="Oir-Nn-G8L"/>
                         <outlet property="userNameField" destination="5xL-g1-nII" id="lHn-7k-Feb"/>
@@ -155,7 +160,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYF-eB-UOj">
-                                <rect key="frame" x="20" y="459" width="280" height="32"/>
+                                <rect key="frame" x="20" y="439" width="280" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.40952620967741937" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -175,7 +180,7 @@
             </objects>
             <point key="canvasLocation" x="1500" y="-281"/>
         </scene>
-        <!--Signup View Controller-->
+        <!--Signup View Controller - You know you want to-->
         <scene sceneID="qPY-Hc-09Z">
             <objects>
                 <viewController id="WXn-MK-fPc" customClass="SignupViewController" sceneMemberID="viewController">
@@ -207,7 +212,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZE-Ij-PB3">
-                                <rect key="frame" x="137" y="247" width="46" height="30"/>
+                                <rect key="frame" x="137" y="209" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Create">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -217,18 +222,11 @@
                                     <action selector="signUp:" destination="WXn-MK-fPc" eventType="touchUpInside" id="cWP-BY-Qw4"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k5a-bq-M4M">
-                                <rect key="frame" x="20" y="209" width="280" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="7fb-kY-jCh"/>
+                    <navigationItem key="navigationItem" title="You know you want to" id="7fb-kY-jCh"/>
                     <connections>
-                        <outlet property="emailField" destination="k5a-bq-M4M" id="3cq-k5-gNS"/>
                         <outlet property="passwordField" destination="GWR-G8-njc" id="n7n-L7-rHo"/>
                         <outlet property="userNameField" destination="ETZ-V6-5Yb" id="JWM-b9-gJM"/>
                     </connections>
@@ -314,11 +312,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <textField key="tableHeaderView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message:" minimumFontSize="17" id="EFM-A7-3nm">
+                        <textField key="tableHeaderView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a message:" minimumFontSize="17" id="EFM-A7-3nm">
                             <rect key="frame" x="0.0" y="64" width="320" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         </textField>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cameraFriendsList" id="SUV-96-Xy7">

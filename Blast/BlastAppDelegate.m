@@ -13,8 +13,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [Parse setApplicationId:@"haha no"
-                  clientKey:@"these are my private keys"];
+    [Parse setApplicationId:@"hidden"
+                  clientKey:@"hidden"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     return YES;
 }

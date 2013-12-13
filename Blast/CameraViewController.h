@@ -20,6 +20,7 @@
 @property (nonatomic, strong)PFUser *currentUser;
 @property (nonatomic, strong)PFRelation *friendsRelation;
 @property (nonatomic, strong)NSArray *friends;
+@property (strong, nonatomic) IBOutlet UITableView *secretMessageView;
 
 @property (nonatomic, strong)NSMutableArray *recipients;
 
