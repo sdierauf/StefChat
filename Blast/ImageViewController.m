@@ -28,10 +28,14 @@
     [super viewDidLoad];
     //[self.navigationController setNavigationBarHidden:true animated:true];
     NSString *secretMessage = [self.message objectForKey:@"secretMessage"];
-    if (secretMessage != nil) {
+    NSLog(secretMessage);
+    self.secretMessageDisplay.hidden = true;
+    NSLog(@"%lu", (unsigned long)secretMessage.length);
+    if (secretMessage != nil && secretMessage.length > 0) {
+        //show the message on the message display
+        self.secretMessageDisplay.hidden = false;
         self.secretMessageDisplay.text = secretMessage;
-    } else {
-        [self.secretMessageDisplay setHidden:true];
+
     }
     PFFile *imageFile = [self.message objectForKey:@"file"];
     NSURL *imageURL = [[NSURL alloc] initWithString:imageFile.url];

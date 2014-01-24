@@ -90,8 +90,12 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     PFObject *message = [self.messages objectAtIndex:indexPath.row];
     NSString *cellLabel = [message objectForKey:@"senderName"];
-    cellLabel = [cellLabel stringByAppendingString:[NSString stringWithFormat:@": %@", [message objectForKey:@"secretMessage"]]];
-    NSLog([message objectForKey:@"secretMessage"]);
+    NSString *secretMessage = [message objectForKey:@"secretMessage"];
+    if (secretMessage != nil && secretMessage.length > 0) {
+        cellLabel = [cellLabel stringByAppendingString:[NSString stringWithFormat:@": %@", secretMessage]];
+    }
+    
+    //NSLog([message objectForKey:@"secretMessage"]);
     cell.textLabel.text = cellLabel;
     
     return cell;
@@ -100,12 +104,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     PFObject *message = [self.messages objectAtIndex:indexPath.row];
     NSString *fileType = [message objectForKey:@"fileType"];
-    NSString *secretMessage = [message objectForKey:@"secretMessage"];
+    //NSString *secretMessage = [message objectForKey:@"secretMessage"];
     if ([fileType isEqualToString:@"image"]) {
         self.messageToPass = message;
         [self performSegueWithIdentifier:@"showImage" sender:self];
     } else {
-        
+        //add video handling code
     }
 }
 

@@ -67,6 +67,7 @@
         
         if ([UIImagePickerController isSourceTypeAvailable:self.imagePicker.sourceType]) {
             self.imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+            //want to disable video taking image picker until it's supported.
         } else {
             self.imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
         }
@@ -288,6 +289,7 @@
     
 }
 
+//Creates a resized image and returns it
 - (UIImage *)resizeImage:(UIImage *)original toWidth:(float)width andHeight:(float)height {
     CGSize newSize = CGSizeMake(width, height);
     CGRect newRect = CGRectMake(0, 0, width, height);

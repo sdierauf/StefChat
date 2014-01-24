@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>29B3815C-80DA-4ED6-89E4-5EF30F74FCAE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>StefChat</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>39C9E5A2-6060-48E7-A1EF-8FACEA3C52E4</key>
+		<string>https://github.com/sdierauf/StefChat</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>StefChat.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>39C9E5A2-6060-48E7-A1EF-8FACEA3C52E4</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sdierauf/StefChat</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>39C9E5A2-6060-48E7-A1EF-8FACEA3C52E4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>39C9E5A2-6060-48E7-A1EF-8FACEA3C52E4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>StefChat</string>
+		</dict>
+	</array>
+</dict>
+</plist>
