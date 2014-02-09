@@ -214,6 +214,11 @@
 
 - (IBAction)cancel:(id)sender {
     [self reset];
+    [self.tabBarController setSelectedIndex:0]; //lel this is so hacky
+    [self.tabBarController setSelectedIndex:2];
+    //basically goes to inbox view and then imediately to the reset camera tab
+    //wasn't putting up the camera modal before.
+    //this is probably bad but yolo
 }
 
 - (IBAction)send:(id)sender {
