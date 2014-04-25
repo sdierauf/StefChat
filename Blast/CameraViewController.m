@@ -1,7 +1,7 @@
 //
 //  CameraViewController.m
 //  StefChat
-//
+// 
 //  Created by Stefan Dierauf on 11/24/13.
 //  Copyright (c) 2013 Stefan Dierauf. All rights reserved.
 //
@@ -218,7 +218,7 @@
     [self.tabBarController setSelectedIndex:2];
     //basically goes to inbox view and then imediately to the reset camera tab
     //wasn't putting up the camera modal before.
-    //this is probably bad but yolo
+    //this is probably bad but yolot
 }
 
 - (IBAction)send:(id)sender {
