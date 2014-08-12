@@ -16,6 +16,7 @@ Basic snapchat clone that uses Parse as a backend. Written as a fun side project
   * In-app signup and login
   * Adding and removing friends via the "edit" section of the friends tab
   * Messages on pictures
+  * actually SENDING pictures
 
 ####Not yet implemented:
 
