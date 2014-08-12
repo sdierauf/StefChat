@@ -1,6 +1,8 @@
 StefChat
 ========
 
+![StefChat Logo](https://raw.githubusercontent.com/sdierauf/StefChat/master/Blast/Icon-60@2x.png)
+
 Basic snapchat clone that uses Parse as a backend. Written as a fun side project to get more comfortable with Obj-C.
 
 
