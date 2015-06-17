@@ -28,5 +28,8 @@ Basic snapchat clone that uses Parse as a backend. Written as a fun side project
 
 ####19/12/2013--
 
-  private API keys added back to the delegate.
-  
+Private API keys added back to the delegate.
+
+####17/6/2015
+
+Images load again, updated to work on iPhone 6 

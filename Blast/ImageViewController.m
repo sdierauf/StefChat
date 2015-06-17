@@ -42,6 +42,7 @@
     NSLog(imageFile.url);
     NSData * imageData = [NSData dataWithContentsOfURL:imageURL];
     self.imageView.image = [UIImage imageWithData:imageData];
+    NSLog(@"should have finished loading image");
 }
 
 - (void)didReceiveMemoryWarning
