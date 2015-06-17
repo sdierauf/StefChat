@@ -39,6 +39,7 @@
     }
     PFFile *imageFile = [self.message objectForKey:@"file"];
     NSURL *imageURL = [[NSURL alloc] initWithString:imageFile.url];
+    NSLog(imageFile.url);
     NSData * imageData = [NSData dataWithContentsOfURL:imageURL];
     self.imageView.image = [UIImage imageWithData:imageData];
 }

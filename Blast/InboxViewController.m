@@ -48,6 +48,7 @@
 }
 
 - (void)reload {
+    NSLog(@"reloading");
     self.currentUser = [PFUser currentUser];
     [self.showLoggedInAs setTitle:[NSString stringWithFormat:@"%@'s inbox", self.currentUser.username]];
     PFQuery *query = [PFQuery queryWithClassName:@"Messages"];
