@@ -10,29 +10,29 @@
 	<string>StefChat</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>39C9E5A2-6060-48E7-A1EF-8FACEA3C52E4</key>
+		<key>264BDF7B81FC1ED95C9784E4EEA0A16343E6091D</key>
 		<string>https://github.com/sdierauf/StefChat</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>StefChat.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>39C9E5A2-6060-48E7-A1EF-8FACEA3C52E4</key>
+		<key>264BDF7B81FC1ED95C9784E4EEA0A16343E6091D</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/sdierauf/StefChat</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>39C9E5A2-6060-48E7-A1EF-8FACEA3C52E4</string>
+	<string>264BDF7B81FC1ED95C9784E4EEA0A16343E6091D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>39C9E5A2-6060-48E7-A1EF-8FACEA3C52E4</string>
+			<string>264BDF7B81FC1ED95C9784E4EEA0A16343E6091D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>StefChat</string>
 		</dict>

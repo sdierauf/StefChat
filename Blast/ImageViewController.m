@@ -28,7 +28,7 @@
     [super viewDidLoad];
     //[self.navigationController setNavigationBarHidden:true animated:true];
     NSString *secretMessage = [self.message objectForKey:@"secretMessage"];
-    NSLog(secretMessage);
+    //NSLog(secretMessage);
     self.secretMessageDisplay.hidden = true;
     NSLog(@"%lu", (unsigned long)secretMessage.length);
     if (secretMessage != nil && secretMessage.length > 0) {
